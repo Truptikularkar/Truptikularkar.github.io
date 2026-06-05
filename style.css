@@ -452,6 +452,13 @@ header .container {
   color: var(--text-main);
 }
 
+.about-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
 .about-meta {
   margin-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
