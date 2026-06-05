@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Trupti Kularkar | Data Engineer & AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Trupti Kularkar, Data Engineer and AI/ML Engineer with 1.6+ years of experience designing and deploying scalable data pipelines and AI-powered automation on GCP.">
+  <meta name="keywords" content="Trupti Kularkar, Data Engineer, AI/ML Engineer, GCP, BigQuery, Apache Airflow, Gemini API, MLOps, Vertex AI, Python, SQL">
+  <meta name="author" content="Trupti Kularkar">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header id="header">
+    <div class="container">
+      <a href="#home" class="logo">
+        <span>Trupti</span>.K
+      </a>
+      <nav class="nav-links" id="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#academic">Academic</a>
+        <a href="#contact">Contact</a>
+        <a href="Kularkar_Trupti_Resume.pdf" class="nav-btn" download>
+          <i data-lucide="download" style="width: 16px; height: 16px; display: inline; vertical-align: middle; margin-right: 5px;"></i> Resume
+        </a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-subtitle">Welcome to my space</span>
+          <h1 class="hero-title">Hi, I'm <span class="gradient-text">Trupti Kularkar</span></h1>
+          <div class="typewriter-container">
+            I'm a <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+          </div>
+          <p class="hero-desc">
+            A passionate <strong>Data Engineer</strong> and <strong>AI/ML Engineer</strong> with 1.6+ years of experience designing and deploying scalable data pipelines and AI-powered automation on Google Cloud Platform (GCP). Specializing in real-time data processing, ETL/ELT pipelines, and MLOps.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn-primary">
+              View My Work <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="Kularkar_Trupti_Resume.pdf" class="btn-secondary" download>
+              Get Resume <i data-lucide="file-text" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-graphic-container">
+          <div class="hero-graphic">
+            <div class="graphic-shape"></div>
+            <div class="graphic-core">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer Node Rings -->
+                <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.3"/>
+                <circle cx="50" cy="50" r="35" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+                <circle cx="50" cy="50" r="22" stroke="currentColor" stroke-width="1.2" opacity="0.8"/>
+                
+                <!-- Central core symbol (Database + AI Node) -->
+                <path d="M50 35 L70 45 L70 55 L50 65 L30 55 L30 45 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M50 42 L62 48 L62 52 L50 58 L38 52 L38 48 Z" fill="currentColor" opacity="0.2"/>
+                
+                <!-- Connected nodes -->
+                <circle cx="50" cy="18" r="4" fill="currentColor"/>
+                <line x1="50" y1="18" x2="50" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                
+                <circle cx="20" cy="40" r="4.5" fill="currentColor"/>
+                <line x1="20" y1="40" x2="33" y2="46" stroke="currentColor" stroke-width="1.5"/>
+                
+                <circle cx="80" cy="40" r="4.5" fill="currentColor"/>
+                <line x1="80" y1="40" x2="67" y2="46" stroke="currentColor" stroke-width="1.5"/>
+                
+                <circle cx="32" cy="72" r="5" fill="currentColor"/>
+                <line x1="32" y1="72" x2="43" y2="61" stroke="currentColor" stroke-width="1.5"/>
+                
+                <circle cx="68" cy="72" r="5" fill="currentColor"/>
+                <line x1="68" y1="72" x2="57" y2="61" stroke="currentColor" stroke-width="1.5"/>
+                
+                <!-- Data stream lines -->
+                <circle cx="50" cy="28" r="2.5" fill="var(--accent-purple-light)"/>
+                <circle cx="50" cy="50" r="5" fill="var(--accent-purple)"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="fade-in-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-glass">
+            <div class="about-avatar">
+              <i data-lucide="user" style="width: 50px; height: 50px; color: var(--text-main);"></i>
+            </div>
+            <h3>Trupti Kularkar</h3>
+            <p style="color: var(--accent-purple-light); font-weight: 500; margin-bottom: 1rem;">Data & AI/ML Engineer</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Dedicated to engineering scalable pipelines, optimizing data architecture, and deploying intelligent MLOps agents.</p>
+            
+            <div class="about-meta">
+              <div class="meta-item">
+                <span>Location:</span>
+                <span>Nagpur, India</span>
+              </div>
+              <div class="meta-item">
+                <span>Education:</span>
+                <span>B.Tech AI (2024)</span>
+              </div>
+              <div class="meta-item">
+                <span>Experience:</span>
+                <span>1.6+ Years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-info">
+          <h3>Harnessing Data & AI for Impact</h3>
+          <p>
+            I focus on bridging the gap between raw data engineering and intelligent automation. With 1.6+ years of hands-on experience, I design scalable data architectures and AI solutions that resolve complex business problems, streamline workflows, and reduce operational overhead.
+          </p>
+          <p>
+            My experience at <strong>Cognizant</strong> includes building autonomous AI agents for system recovery, deploying real-time data pipelines, and structuring robust data quality guardrails on <strong>Google Cloud Platform (GCP)</strong>. I am driven by the pursuit of code quality, pipeline reliability, and cost-efficient cloud designs.
+          </p>
+          <div class="about-details-grid">
+            <div class="detail-box">
+              <h4>Education</h4>
+              <p><strong>B.Tech in Artificial Intelligence</strong><br>G. H. Raisoni College of Engineering, Nagpur<br>CGPA: <strong>8.83</strong> (2020 - 2024)</p>
+            </div>
+            <div class="detail-box">
+              <h4>Focus Areas</h4>
+              <p>Real-Time ETL Pipelines, Generative AI Agents, MLOps orchestration, Data Quality Guardrails, and Cloud Optimization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="fade-in-section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <!-- GCP & Cloud -->
+          <div class="skills-category">
+            <h3><i data-lucide="cloud"></i> Cloud & GCP</h3>
+            <div class="skills-list">
+              <span class="skill-tag">BigQuery</span>
+              <span class="skill-tag">Cloud Storage</span>
+              <span class="skill-tag">Pub/Sub</span>
+              <span class="skill-tag">Cloud Functions</span>
+              <span class="skill-tag">Cloud Run</span>
+              <span class="skill-tag">Airflow DAGs</span>
+              <span class="skill-tag">Dataflow</span>
+              <span class="skill-tag">ETL Pipelines</span>
+              <span class="skill-tag">Data Warehousing</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div>
+          <!-- Gen AI -->
+          <div class="skills-category">
+            <h3><i data-lucide="cpu"></i> Generative AI</h3>
+            <div class="skills-list">
+              <span class="skill-tag">Vertex AI</span>
+              <span class="skill-tag">Gemini API</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">AI Agents</span>
+              <span class="skill-tag">LLMs (Gemini 2.5 Pro)</span>
+              <span class="skill-tag">LLM Orchestration</span>
+              <span class="skill-tag">MLOps</span>
+            </div>
+          </div>
+          <!-- ML & AI -->
+          <div class="skills-category">
+            <h3><i data-lucide="brain"></i> ML & AI</h3>
+            <div class="skills-list">
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Scikit-Learn</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">NLP (NLTK)</span>
+              <span class="skill-tag">BigQuery ML</span>
+              <span class="skill-tag">Data Quality</span>
+            </div>
+          </div>
+          <!-- Languages & Tools -->
+          <div class="skills-category">
+            <h3><i data-lucide="code-2"></i> Languages & Tools</h3>
+            <div class="skills-list">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">Looker Studio</span>
+              <span class="skill-tag">Google Colab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="fade-in-section">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline">
+        <!-- Cognizant Analyst -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Nov 2025 – Present</span>
+          <div class="timeline-card">
+            <h3>Programmer Analyst</h3>
+            <span class="timeline-company">Cognizant Technology Solutions | Pune, India</span>
+            <ul class="timeline-bullets">
+              <li><strong>LLM-powered Agent:</strong> Built a ticket resolution agent on Vertex AI (Gemini 2.5 Pro) that automated ~60% of repetitive support tickets, cutting resolution time from 4 hours to under 30 minutes.</li>
+              <li><strong>Data Quality Guardrails:</strong> Designed SQL data validation frameworks across 15+ ETL pipelines, enforcing schema consistency and duplicate checks, reducing incidents by ~35%.</li>
+              <li><strong>DAG & Query Optimization:</strong> Optimized BigQuery queries to save ~25% costs and automated 20+ Airflow DAGs to reduce failure response times by 50%.</li>
+              <li><strong>Real-Time Pipelines:</strong> Architected event-driven ETL pipelines (GCS → Pub/Sub → Cloud Functions → BigQuery) processing 500K+ daily events with sub-2-minute latency.</li>
+              <li>Collaborated on enterprise workflow systems and mentored junior engineers on GCP and Airflow pipeline patterns.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Cognizant Trainee -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Nov 2024 – Nov 2025</span>
+          <div class="timeline-card">
+            <h3>Programmer Analyst Trainee</h3>
+            <span class="timeline-company">Cognizant Technology Solutions | Chennai, India</span>
+            <ul class="timeline-bullets">
+              <li>Gained extensive hands-on experience in GCP Cloud environment, Python scripting, SQL optimization, and ETL pipelines.</li>
+              <li>Developed a comprehensive retail data pipeline for sales trend analysis and forecasting using structured datasets.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="fade-in-section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="professional">Professional</button>
+        <button class="filter-btn" data-filter="academic">Academic & Open Source</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Pro Project 1 -->
+        <div class="project-card" data-category="professional">
+          <div class="project-meta-top">
+            <span class="project-type-badge">Professional</span>
+            <div class="project-icons">
+              <i data-lucide="server" style="width: 20px; height: 20px;"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Automated Sales Data Validation</h3>
+            <p>Engineered a configurable Apache Airflow data validation pipeline to cross-verify sales records between source and target systems using CTE-based SQL logic.</p>
+            <ul class="project-bullet-details">
+              <li>Reduced manual validation effort by ~70%.</li>
+              <li>Built dynamic runtime onboarding via `dag_run.conf` configurations.</li>
+              <li>Configured automated Microsoft Teams alerting using Power Automate REST APIs.</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>Apache Airflow</span>
+              <span>BigQuery</span>
+              <span>SQL</span>
+              <span>Python</span>
+              <span>Power Automate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro Project 2 -->
+        <div class="project-card" data-category="professional">
+          <div class="project-meta-top">
+            <span class="project-type-badge">Professional</span>
+            <div class="project-icons">
+              <i data-lucide="activity" style="width: 20px; height: 20px;"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>AI Data Quality Anomaly Detection</h3>
+            <p>Developed an AI-driven monitoring system using BigQuery ML Linear Regression and adaptive thresholds to replace hardcoded alert parameters.</p>
+            <ul class="project-bullet-details">
+              <li>Achieved ~92% detection accuracy with under 5% false-positive rate.</li>
+              <li>Integrated Gemini 2.5 Pro for automated root-cause analysis (RCA).</li>
+              <li>Cut investigation time from 45 minutes to under 5 minutes.</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>BigQuery ML</span>
+              <span>Gemini 2.5 Pro</span>
+              <span>SQL</span>
+              <span>Vertex AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro Project 3 -->
+        <div class="project-card" data-category="professional">
+          <div class="project-meta-top">
+            <span class="project-type-badge">Professional</span>
+            <div class="project-icons">
+              <i data-lucide="shield-alert" style="width: 20px; height: 20px;"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>AI AutoHeal Recovery Agent</h3>
+            <p>Architected an autonomous agent deployed on GCP Cloud Run to monitor BigQuery logs, detect failed Airflow jobs, and perform self-remediation.</p>
+            <ul class="project-bullet-details">
+              <li>Auto-remediates ~75% of transient data pipeline failures.</li>
+              <li>Uses Gemini 2.5 Pro to classify errors and resolve issues without human intervention.</li>
+              <li>Enforced safety guardrails and built audit tracking using NDJSON logs loaded to BigQuery.</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>GCP Cloud Run</span>
+              <span>Gemini 2.5 Pro</span>
+              <span>Apache Airflow</span>
+              <span>BigQuery</span>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acad Project 1 -->
+        <div class="project-card" data-category="academic">
+          <div class="project-meta-top">
+            <span class="project-type-badge">Academic</span>
+            <div class="project-icons">
+              <a href="https://github.com/Truptikularkar/Deepfake-Detection-using-LSTM-and-ResNext" target="_blank" aria-label="GitHub Repository">
+                <i data-lucide="github" style="width: 20px; height: 20px;"></i>
+              </a>
+              <i data-lucide="video" style="width: 20px; height: 20px;"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Deepfake Detection System</h3>
+            <p>Developed a deep learning model to detect manipulated video media, combining convolutional spatial feature extraction with sequential temporal analysis.</p>
+            <ul class="project-bullet-details">
+              <li>Integrated <strong>ResNeXt CNN</strong> to capture frame-by-frame visual anomalies.</li>
+              <li>Employed <strong>LSTM Networks</strong> to track inconsistencies across video frame sequences.</li>
+              <li>Engineered a face-cropping and frame-normalization preprocessing pipeline.</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>ResNeXt</span>
+              <span>LSTM</span>
+              <span>PyTorch</span>
+              <span>OpenCV</span>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acad Project 2 -->
+        <div class="project-card" data-category="academic">
+          <div class="project-meta-top">
+            <span class="project-type-badge">Academic</span>
+            <div class="project-icons">
+              <a href="https://github.com/Truptikularkar/ML_Challenge" target="_blank" aria-label="GitHub Repository">
+                <i data-lucide="github" style="width: 20px; height: 20px;"></i>
+              </a>
+              <i data-lucide="bar-chart-2" style="width: 20px; height: 20px;"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Amazon Product Length Predictor</h3>
+            <p>Participated in Amazon's ML challenge, developing regression algorithms to predict physical product lengths based on metadata text features.</p>
+            <ul class="project-bullet-details">
+              <li>Performed advanced textual feature extraction on titles, bullet points, and descriptions.</li>
+              <li>Optimized predictive parameters using ensemble models and regression pipelines.</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>Natural Language Processing</span>
+              <span>Scikit-Learn</span>
+              <span>Jupyter</span>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acad Project 3 -->
+        <div class="project-card" data-category="academic">
+          <div class="project-meta-top">
+            <span class="project-type-badge">Open Source</span>
+            <div class="project-icons">
+              <a href="https://github.com/Truptikularkar/uptrain" target="_blank" aria-label="GitHub Repository">
+                <i data-lucide="github" style="width: 20px; height: 20px;"></i>
+              </a>
+              <i data-lucide="line-chart" style="width: 20px; height: 20px;"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>UpTrain Integration</h3>
+            <p>Contributed to and integrated UpTrain, an open-source ML monitoring tool used to detect model drift, analyze data distribution changes, and validate predictions.</p>
+            <ul class="project-bullet-details">
+              <li>Explored automated checks for machine learning performance and validation.</li>
+              <li>Maintained code updates and integrated ML monitoring metrics.</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>ML Monitoring</span>
+              <span>Model Evaluation</span>
+              <span>Python</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMICS, CERTIFICATIONS & PUBLICATIONS -->
+  <section id="academic" class="fade-in-section">
+    <div class="container">
+      <div class="acad-grid">
+        <!-- Publications -->
+        <div class="acad-section">
+          <h3><i data-lucide="book-open"></i> Research Publications</h3>
+          <div class="pub-list">
+            <!-- Pub 1 -->
+            <div class="pub-card">
+              <h4>An Intelligent Diabetes Predicting Model for Diverse Ethnicities</h4>
+              <span class="pub-journal">Lecture Notes in Electrical Engineering, Springer Nature Singapore</span>
+              <p class="pub-authors">Dive S., Sakarkar G., Kularkar T., et al.</p>
+              <a href="https://link.springer.com/chapter/10.1007/978-981-99-8438-1_19" target="_blank" class="pub-link">
+                View Publication <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+              </a>
+            </div>
+            <!-- Pub 2 -->
+            <div class="pub-card">
+              <h4>Transforming Operations: Integrating Computer Vision and Machine Learning for Automated Business Processes</h4>
+              <span class="pub-journal">International Conference on Intelligent and Practical Business (ICIPB)</span>
+              <p class="pub-authors">Kularkar T., et al.</p>
+              <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-top: 0.5rem;"><i data-lucide="check" style="width: 12px; height: 12px; display: inline; vertical-align: middle;"></i> Presented at ICIPB</span>
+            </div>
+            <!-- Pub 3 -->
+            <div class="pub-card">
+              <h4>Deepfake Detection Using LSTM And ResNext</h4>
+              <span class="pub-journal">International Journal of Creative Research Thoughts (IJCRT)</span>
+              <p class="pub-authors">Kularkar T., Jikar T., Rewaskar V., Dhawale K.</p>
+              <a href="https://ijcrt.org/viewfull.php?&p_id=IJCRT2311476" target="_blank" class="pub-link">
+                View Paper (PDF) <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="acad-section">
+          <h3><i data-lucide="award"></i> Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-card" style="display: flex; gap: 1rem; align-items: center;">
+              <div class="contact-icon" style="color: var(--accent-purple-light);"><i data-lucide="cloud"></i></div>
+              <div class="cert-content">
+                <h4>Google Cloud Certified Associate Data Practitioner</h4>
+                <p>Issued by Google Cloud</p>
+              </div>
+            </div>
+            <div class="cert-card" style="display: flex; gap: 1rem; align-items: center;">
+              <div class="contact-icon" style="color: var(--accent-purple-light);"><i data-lucide="database"></i></div>
+              <div class="cert-content">
+                <h4>Discover Data Analysis Badge</h4>
+                <p>Issued by Microsoft</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="fade-in-section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's collaborate on your next project</h3>
+          <p style="color: var(--text-secondary);">
+            Whether you want to discuss a data engineering pipeline, talk about generative AI agents, or ask about my publications, feel free to reach out. I am open to technical inquiries, consultations, and professional opportunities.
+          </p>
+          <div class="contact-details">
+            <div class="contact-method">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p><a href="mailto:kularkartrupti123@gmail.com">kularkartrupti123@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p><a href="tel:+9834055766">+91 98340 55766</a></p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Nagpur, Maharashtra, India</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/trupti-kularkar-579062210" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://github.com/Truptikularkar" target="_blank" class="social-icon" aria-label="GitHub Profile">
+              <i data-lucide="github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contact-form" action="https://formspree.io/f/xoqgypkw" method="POST">
+            <!-- Replace formspree id if user decides, otherwise defaults to a beautiful fallback simulation if not valid -->
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+              <label for="name" class="form-label">Full Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+              <label for="email" class="form-label">Email Address</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+              <label for="subject" class="form-label">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" class="form-input" placeholder=" " required></textarea>
+              <label for="message" class="form-label">Your Message</label>
+            </div>
+            <button type="submit" class="form-submit-btn">
+              Send Message <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <span>Trupti</span>.K
+      </div>
+      <p>&copy; 2026 Trupti Kularkar. All Rights Reserved.</p>
+      <p style="font-size: 0.8rem; color: var(--text-muted);">
+        Crafted with <span style="color: var(--accent-purple);">&#9829;</span> using HTML, CSS & JavaScript.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
